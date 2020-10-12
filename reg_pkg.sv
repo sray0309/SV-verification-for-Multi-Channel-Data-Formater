@@ -1,0 +1,236 @@
+`include "param_def.v"
+package reg_pkg;
+
+class reg_trans;
+    rand bit [1:0] cmd;
+    rand bit [`ADDR_WIDTH-1:0] addr;
+    rand bit [`CMD_DATA_WIDTH-1:0] data;
+    bit rsp;
+
+    constraint cstr{
+        soft cmd inside{`WRITE, `READ, `IDLE};
+        soft addr inside{`SLV0_RW_ADDR, `SLV1_RW_ADDR, `SLV2_RW_ADDR, `SLV0_R_ADDR, `SLV1_R_ADDR, `SLV2_R_ADDR};
+        addr[7:4]==0 && cmd==`WRITE -> soft data[31:6]==0;
+        soft addr[7:5]==0;
+        addr[4]==1 -> soft cmd == `READ;
+        /*rand data[5:0]?*/
+    }
+
+    function reg_trans clone();
+        reg_trans c=new();
+        c.cmd = this.cmd;
+        c.addr = this.addr;
+        c.data = this.data;
+        c.rsp = this.rsp;
+        return c;
+    endfunction
+
+    function string sprint();
+      string s;
+      s = {s, $sformatf("=======================================\n")};
+      s = {s, $sformatf("reg_trans object content is as below: \n")};
+      s = {s, $sformatf("addr = %2x: \n", this.addr)};
+      s = {s, $sformatf("cmd = %2b: \n", this.cmd)};
+      s = {s, $sformatf("data = %8x: \n", this.data)};
+      s = {s, $sformatf("rsp = %0d: \n", this.rsp)};
+      s = {s, $sformatf("=======================================\n")};
+      return s;
+    endfunction
+
+endclass:reg_trans
+
+class reg_driver;
+    string name;
+    virtual reg_intf intf;
+    mailbox #(reg_trans) req_mb;
+    mailbox #(reg_trans) rsp_mb;
+
+    function new(string name = "reg_driver");
+        this.name = name;
+    endfunction
+
+    function void set_interface(virtual reg_intf intf);
+        this.intf = intf;
+    endfunction
+
+    task do_reset();
+        forever begin
+            @(negedge intf.rstn);
+            intf.cmd <= `IDLE;
+            intf.cmd_addr <= 8'b00000000;
+            intf.cmd_data_m2s <= 0;
+        end
+    endtask
+
+    task do_drive();
+        reg_trans rsp, req;
+        @(posedge intf.rstn);
+        forever begin
+            this.req_mb.get(req);
+            this.reg_write(req);
+            rsp = req.clone();
+            rsp.rsp=1;
+            this.rsp_mb.put(rsp);
+        end
+    endtask
+
+    task reg_write(reg_trans t);
+        @(posedge intf.clk iff intf.rstn);
+        case(t.cmd)
+            `WRITE:begin
+                intf.drv_ck.cmd_addr <= t.addr;
+                intf.drv_ck.cmd <= t.cmd;
+                intf.drv_ck.cmd_data_m2s <= t.data;
+            end
+            `IDLE:begin
+                this.reg_idle();
+            end
+            `READ:begin
+                intf.drv_ck.cmd_addr <= t.addr;
+                intf.drv_ck.cmd <= t.cmd;
+                repeat(2) @(negedge intf.clk);
+                t.data <= intf.drv_ck.cmd_data_s2m;
+            end
+        endcase
+        $display("%0t reg driver [%s] sent addr %2x, cmd %2b, data %8x", $time, name, t.addr, t.cmd, t.data);
+    endtask
+
+    task reg_idle();
+        @(posedge intf.clk);
+        intf.drv_ck.cmd <= `IDLE;
+        intf.drv_ck.cmd_addr <= 0;
+        intf.drv_ck.cmd_data_m2s <= 0;
+    endtask
+
+    task run();
+        fork
+            this.do_reset();
+            this.do_drive();
+        join
+    endtask
+
+endclass:reg_driver
+
+class reg_generator;
+    rand bit [1:0] cmd = -1;
+    rand bit [7:0] addr = -1;
+    rand bit [31:0] data = -1;
+    mailbox #(reg_trans) req_mb;
+    mailbox #(reg_trans) rsp_mb;
+
+    constraint cstr{
+        soft cmd == -1;
+        soft addr == -1;
+        soft data == -1;
+    };
+
+    function new();
+        req_mb = new();
+        rsp_mb = new();
+    endfunction
+
+    task send_trans();
+        reg_trans req, rsp;
+        req = new();
+        assert(req.randomize with {
+            local::addr >= 0 -> addr == local::addr;
+            local::cmd >=0 -> cmd == local::cmd;
+            local::data >= 0 -> data == local::data;
+        })
+        else $fatal("[RNDFAIL] register packet randomization failure!");
+        $display (req.sprint());
+        this.req_mb.put(req);
+        this.rsp_mb.get(rsp);
+        $display (rsp.sprint());
+        if (rsp.cmd == `READ) this.data = rsp.data;
+        assert(rsp.rsp)
+            else $error("[RSPERR] %0t error response received!", $time);
+    endtask
+
+    function string sprint();
+      string s;
+      s = {s, $sformatf("=======================================\n")};
+      s = {s, $sformatf("reg_generator object content is as below: \n")};
+      s = {s, $sformatf("addr = %2x: \n", this.addr)};
+      s = {s, $sformatf("cmd = %2b: \n", this.cmd)};
+      s = {s, $sformatf("data = %8x: \n", this.data)};
+      s = {s, $sformatf("=======================================\n")};
+      return s;
+    endfunction
+
+    function void post_randomize();
+      string s;
+      s = {"AFTER RANDOMIZATION \n", this.sprint()};
+      $display(s);
+    endfunction
+
+    task start();
+        send_trans();
+    endtask
+
+endclass:reg_generator
+
+class reg_monitor;
+    string name;
+    virtual reg_intf intf;
+    mailbox #(reg_trans) mon_mb;
+
+    function new (string name = "reg_monitor");
+        this.name = name;
+    endfunction
+
+    function void set_interface (virtual reg_intf intf);
+        this.intf = intf;
+    endfunction
+
+    task mon_trans();
+        reg_trans m;
+        forever begin
+            @(posedge intf.clk iff (intf.rstn && intf.mon_ck.cmd != `IDLE));
+            m = new();
+            m.addr <= intf.mon_ck.cmd_addr;
+            m.cmd <= intf.mon_ck.cmd;
+            if (intf.mon_ck.cmd == `WRITE) begin
+                m.data <= intf.mon_ck.cmd_data_m2s;
+            end
+            else if (intf.mon_ck.cmd == `READ) begin
+                @(posedge intf.clk);
+                m.data <= intf.mon_ck.cmd_data_s2m;
+            end
+            mon_mb.put(m);
+        end
+    endtask
+
+    task run();
+        this.mon_trans();
+    endtask
+endclass: reg_monitor
+
+class reg_agent;
+    string name;
+    virtual reg_intf intf;
+    reg_driver driver;
+    reg_monitor monitor;
+
+    function new(string name = "reg_agent");
+        this.name = name;
+        this.driver = new({name,".driver"});
+        this.monitor = new({name,".monitor"});
+    endfunction
+
+    function set_interface (virtual reg_intf intf);
+        this.intf = intf;
+        this.driver.set_interface(intf);
+        this.monitor.set_interface(intf);
+    endfunction
+
+    task run();
+        fork
+            this.driver.run();
+            this.monitor.run();
+        join        
+    endtask
+
+endclass: reg_agent
+
+endpackage
