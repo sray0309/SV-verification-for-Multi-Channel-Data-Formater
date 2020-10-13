@@ -18,9 +18,9 @@ all:    simv
 # Modify starting here
 #####
 
-TESTBENCH = rpt_pkg.sv chnl_pkg.sv reg_pkg.sv fmt_pkg.sv mcdf_pkg.sv tb.sv 	
+TESTBENCH = rpt_pkg.sv arb_pkg.sv chnl_pkg.sv fmt_pkg.sv reg_pkg.sv mcdf_pkg.sv tb.sv 	
 
-SIMFILES =
+SIMFILES = verilog/param_def.v verilog/arbiter.v verilog/formater.v verilog/mcdf.v verilog/reg.v verilog/slave_fifo.v 
 
 SYNFILES = ISR.vg
 

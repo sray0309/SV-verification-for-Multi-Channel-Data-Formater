@@ -1,0 +1,648 @@
+global coverage_group 0 mcdf_pkg::mcdf_coverage::cg_mcdf_reg_write_read __coverage_mcdf_coverage.cg_mcdf_reg_write_read unused_mcdf_coverage_cg_mcdf_reg_write_read_loop_label mcdf_pkg 0 1 0 0 0  ( )
+ 1 1
+ 85 /afs/umich.edu/user/r/a/rayss/Desktop/verification_MCDF/SV_experiment/try/mcdf_pkg.sv
+ 257 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+1
+ 4 addr 258 0 0 0 63 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn 63 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_6
+ 0
+ 0
+ 0
+ 0
+ 0
+ 6 1 1 0 0 1 1 12 slv0_rw_addr 260 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 12 slv1_rw_addr 261 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 12 slv2_rw_addr 262 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 11 slv0_r_addr 263 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_3 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 11 slv1_r_addr 264 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 11 slv2_r_addr 265 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_5 0 0 0 0 0 0 0
+
+ 3 cmd 267 0 0 0 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_7 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_7 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_6
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 5 write 269 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_8 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 read 270 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_9 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 idle 271 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 65 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_write_read_fn_a 0 0 0 0 0 0 0
+
+ 8 cmdXaddr 0 273 0 0 0 0 2 1 0 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 18 1 1 0 0 -1 0 0 1 1 12 slv0_rw_addr 274 0 1 0 1 1 1 0 0 1 12 slv0_rw_addr 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 12 slv1_rw_addr 275 0 1 0 1 1 1 0 0 1 12 slv1_rw_addr 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 12 slv2_rw_addr 276 0 1 0 1 1 1 0 0 1 12 slv2_rw_addr 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 slv0_r_addr 277 0 1 0 1 1 1 0 0 1 11 slv0_r_addr 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 slv1_r_addr 278 0 1 0 1 1 1 0 0 1 11 slv1_r_addr 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 slv2_r_addr 279 0 1 0 1 1 1 0 0 1 11 slv2_r_addr 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 5 write 280 0 1 0 1 1 1 0 1 1 5 write 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 4 read 281 0 1 0 1 1 1 0 1 1 4 read 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 4 idle 282 0 1 0 1 1 1 0 1 1 4 idle 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 18 write_slv0_rw_addr 283 0 1 0 1 3 1 0 1 1 5 write 0 0 0 0 0 1 0 0 1 12 slv0_rw_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 18 write_slv1_rw_addr 284 0 1 0 1 3 1 0 1 1 5 write 0 0 0 0 0 1 0 0 1 12 slv1_rw_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 18 write_slv2_rw_addr 285 0 1 0 1 3 1 0 1 1 5 write 0 0 0 0 0 1 0 0 1 12 slv2_rw_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 17 read_slv0_rw_addr 286 0 1 0 1 3 1 0 1 1 4 read 0 0 0 0 0 1 0 0 1 12 slv0_rw_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 17 read_slv1_rw_addr 287 0 1 0 1 3 1 0 1 1 4 read 0 0 0 0 0 1 0 0 1 12 slv1_rw_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 17 read_slv2_rw_addr 288 0 1 0 1 3 1 0 1 1 4 read 0 0 0 0 0 1 0 0 1 12 slv2_rw_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 16 read_slv0_r_addr 289 0 1 0 1 3 1 0 1 1 4 read 0 0 0 0 0 1 0 0 1 11 slv0_r_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 16 read_slv1_r_addr 290 0 1 0 1 3 1 0 1 1 4 read 0 0 0 0 0 1 0 0 1 11 slv1_r_addr 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 16 read_slv2_r_addr 291 0 1 0 1 3 1 0 1 1 4 read 0 0 0 0 0 1 0 0 1 11 slv2_r_addr 0 0 0 0 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 mcdf_pkg::mcdf_coverage::cg_mcdf_reg_illegal_access __coverage_mcdf_coverage.cg_mcdf_reg_illegal_access unused_mcdf_coverage_cg_mcdf_reg_illegal_access_loop_label mcdf_pkg 0 1 0 0 0  ( )
+ 0 295 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+4
+0
+1
+ 4 addr 296 0 0 0 67 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn 67 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 8 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_a
+ 0
+ 0
+ 0
+ 0
+ 0
+ 3 1 1 0 0 1 1 8 legal_rw 298 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 3 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_0 0 0 0 0 0 0 0
+ 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_1 0 0 0 0 0 0 0
+ 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 7 legal_r 299 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 3 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_3 0 0 0 0 0 0 0
+ 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_4 0 0 0 0 0 0 0
+ 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_5 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 7 illegal 300 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 3 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_6 0 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_7 0 0 0 0 0
+ 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_8 0 0 0 0 0 0 0
+ 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_9 0 0 0 0 0 0 0
+
+ 3 cmd 302 0 0 0 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_b 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_b 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_a
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 write 304 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_c 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 read 305 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_d 0 0 0 0 0 0 0
+
+ 5 wdata 307 0 0 0 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_e 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_e 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_a
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 legal 309 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_a 0 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_f 0 0 0 0 0
+ 1 1 0 0 1 1 7 illegal 310 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 70 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_10 0 70 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_11 0 0 0 0 0
+
+ 5 rdata 312 0 0 0 70 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_12 70 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_12 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_a
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 5 legal 314 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 69 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_a 0 70 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_mcdf_reg_illegal_access_fn_13 0 0 0 0 0
+ 1 3 0 0 1 1 7 illegal 315 0 0 3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0
+
+ 13 cmdXaddrXdata 0 317 0 0 0 0 4 1 0 2 3 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 12 1 1 0 0 -1 0 0 1 1 13 addr_legal_rw 318 0 1 0 1 1 1 0 0 1 8 legal_rw 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 12 addr_legal_r 319 0 1 0 1 1 1 0 0 1 7 legal_r 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 12 addr_illegal 320 0 1 0 1 1 1 0 0 1 7 illegal 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 9 cmd_write 321 0 1 0 1 1 1 0 1 1 5 write 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 8 cmd_read 322 0 1 0 1 1 1 0 1 1 4 read 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 wdata_legal 323 0 1 0 1 1 1 0 2 1 5 legal 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 13 wdata_illegal 324 0 1 0 1 1 1 0 2 1 7 illegal 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 rdata_legal 325 0 1 0 1 1 1 0 3 1 5 legal 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 18 write_illegal_addr 326 0 1 0 1 3 1 0 1 1 5 write 0 0 0 0 0 1 0 0 1 7 illegal 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 17 read_illegal_addr 327 0 1 0 1 3 1 0 1 1 4 read 0 0 0 0 0 1 0 0 1 7 illegal 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 21 write_illegal_rw_data 328 0 1 0 1 5 1 0 1 1 5 write 0 0 0 0 0 1 0 0 1 8 legal_rw 0 0 0 0 0 0 0 1 0 2 1 7 illegal 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 20 write_illegal_r_data 329 0 1 0 1 5 1 0 1 1 5 write 0 0 0 0 0 1 0 0 1 7 legal_r 0 0 0 0 0 0 0 1 0 2 1 7 illegal 0 0 0 0 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 mcdf_pkg::mcdf_coverage::cg_channel_disable __coverage_mcdf_coverage.cg_channel_disable unused_mcdf_coverage_cg_channel_disable_loop_label mcdf_pkg 0 1 0 0 0  ( )
+ 0 333 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+6
+0
+1
+ 6 ch0_en 334 0 0 0 59 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn 59 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_2
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 1 1 1 2 en 336 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_0 0 0 0 0 0 0 0
+ 1 1 0 1 1 1 3 dis 337 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_1 0 0 0 0 0 0 0
+
+ 6 ch1_en 339 0 0 0 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_3 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_2
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 1 1 1 2 en 341 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_0 0 0 0 0 0 0 0
+ 1 1 0 1 1 1 3 dis 342 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_1 0 0 0 0 0 0 0
+
+ 6 ch2_en 344 0 0 0 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_4 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_2
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 1 1 1 2 en 346 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_0 0 0 0 0 0 0 0
+ 1 1 0 1 1 1 3 dis 347 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_1 0 0 0 0 0 0 0
+
+ 7 ch0_vld 349 0 0 0 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_5 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_5 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_2
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 2 hi 351 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 2 lo 352 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_1 0 0 0 0 0 0 0
+
+ 7 ch1_vld 354 0 0 0 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_6 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_6 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_2
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 2 hi 356 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 2 lo 357 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_1 0 0 0 0 0 0 0
+
+ 7 ch2_vld 359 0 0 0 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_7 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_7 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 1 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_2
+ 0
+ 0
+ 0
+ 0
+ 0
+ 2 1 1 0 0 1 1 2 hi 361 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 2 lo 362 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_channel_disable_fn_1 0 0 0 0 0 0 0
+
+ 10 chenXchvld 0 364 0 0 0 0 6 0 1 2 3 4 5 -1 0 0 0
+ 0
+ 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 18 1 1 0 0 -1 0 0 1 1 6 ch0_en 365 0 1 0 1 1 1 0 0 1 2 en 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 7 ch0_dis 366 0 1 0 1 1 1 0 0 1 3 dis 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch1_en 367 0 1 0 1 1 1 0 1 1 2 en 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 7 ch1_dis 368 0 1 0 1 1 1 0 1 1 3 dis 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch2_en 369 0 1 0 1 1 1 0 2 1 2 en 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 7 ch2_dis 370 0 1 0 1 1 1 0 2 1 3 dis 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch0_hi 371 0 1 0 1 1 1 0 3 1 2 hi 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch0_lo 372 0 1 0 1 1 1 0 3 1 2 lo 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch1_hi 373 0 1 0 1 1 1 0 4 1 2 hi 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch1_lo 374 0 1 0 1 1 1 0 4 1 2 lo 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch2_hi 375 0 1 0 1 1 1 0 5 1 2 hi 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 6 ch2_lo 376 0 1 0 1 1 1 0 5 1 2 lo 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 10 ch0_en_vld 377 0 1 0 1 3 1 0 0 1 2 en 0 0 0 0 0 1 0 3 1 2 hi 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 ch0_dis_vld 378 0 1 0 1 3 1 0 0 1 3 dis 0 0 0 0 0 1 0 3 1 2 hi 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 10 ch1_en_vld 379 0 1 0 1 3 1 0 1 1 2 en 0 0 0 0 0 1 0 4 1 2 hi 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 ch1_dis_vld 380 0 1 0 1 3 1 0 1 1 3 dis 0 0 0 0 0 1 0 4 1 2 hi 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 10 ch2_en_vld 381 0 1 0 1 3 1 0 2 1 2 en 0 0 0 0 0 1 0 5 1 2 hi 0 0 0 0 0 0 0 0 0 0 0 0
+ 1 1 0 0 -1 0 0 1 1 11 ch2_dis_vld 382 0 1 0 1 3 1 0 2 1 3 dis 0 0 0 0 0 1 0 5 1 2 hi 0 0 0 0 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 mcdf_pkg::mcdf_coverage::cg_arbiter_priority __coverage_mcdf_coverage.cg_arbiter_priority unused_mcdf_coverage_cg_arbiter_priority_loop_label mcdf_pkg 0 1 0 0 0  ( )
+ 0 386 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+3
+0
+0
+ 8 ch0_prio 387 0 0 0 60 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn 60 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 8 ch_prio0 388 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio1 389 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio2 390 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio3 391 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_3 0 0 0 0 0 0 0
+
+ 8 ch1_prio 393 0 0 0 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_4 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_4 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 8 ch_prio0 394 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio1 395 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio2 396 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio3 397 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_3 0 0 0 0 0 0 0
+
+ 8 ch2_prio 399 0 0 0 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_5 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_5 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 8 ch_prio0 400 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio1 401 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio2 402 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_2 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 8 ch_prio3 403 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_arbiter_priority_fn_3 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 mcdf_pkg::mcdf_coverage::cg_formatter_length __coverage_mcdf_coverage.cg_formatter_length unused_mcdf_coverage_cg_formatter_length_loop_label mcdf_pkg 0 1 0 0 0  ( )
+ 0 407 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+2
+0
+0
+ 2 id 408 0 0 0 60 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn 60 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 2 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 3 ch0 409 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 ch1 410 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 3 ch2 411 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_2 0 0 0 0 0 0 0
+ 1 3 0 0 1 1 7 illegal 412 0 0 3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0
+
+ 6 length 414 0 0 0 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_3 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 2 6 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 5 1 1 0 0 1 1 4 len4 415 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_4 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 4 len8 416 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_5 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 len16 417 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_6 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 5 len32 418 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 62 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_length_fn_7 0 0 0 0 0 0 0
+ 1 3 0 0 1 1 7 illegal 419 0 0 3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 8 0 0 0 0 0 0 0 0
+
+end_coverage_group
+global coverage_group 0 mcdf_pkg::mcdf_coverage::cg_formatter_grant __coverage_mcdf_coverage.cg_formatter_grant unused_mcdf_coverage_cg_formatter_grant_loop_label mcdf_pkg 0 1 0 0 0  ( )
+ 0 423 0 0 0 1 0 0 0 0  1
+0
+0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+0
+0
+0
+64
+0
+ 0
+
+1
+0
+0
+ 18 delay_req_to_grant 424 0 0 0 59 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_grant_fn 59 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_grant_fn 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 0 1 32 0 0 1 0 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 0
+ 4 1 1 0 0 1 1 6 delay1 425 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_grant_fn_0 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 6 delay2 426 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_grant_fn_1 0 0 0 0 0 0 0
+ 1 1 0 0 1 1 14 delay3_or_more 427 0 0 1 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_grant_fn_2 0 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_grant_fn_3 0 0 0 0 0
+ 1 3 0 0 1 1 7 illegal 428 0 0 3 0 0 0 0 0 0 0 0 0 0 -1 0 0 -1 0 0 1 1 1 61 mcdf_coverage::mcdf_pkg_mcdf_coverage_cg_formatter_grant_fn_4 0 0 0 0 0 0 0
+
+end_coverage_group
